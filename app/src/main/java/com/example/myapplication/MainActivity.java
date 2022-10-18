@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity
                             {
                                 Toast.makeText(MainActivity.this,"Registered Successfully",Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                                finish();
                             }
                             else
                             {
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v)
             {
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                finish();
             }
         });
     }
